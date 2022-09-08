@@ -1,0 +1,29 @@
+{
+    "_id": "j101",
+    "ownerId": "u101",
+    "botName": "Rock star full stack",
+    "role": "",
+    "imgUrl": "https://ak1.picdn.net/shutterstock/videos/5898101/thumb/1.jpg",
+    "gender": "",
+    "experience": {
+        "title": "experience",
+        "description": ""
+    },
+    "education": {
+        "title": "education",
+        "description": ""
+    },
+    "other": {
+        "title": "other",
+        "description": ""
+    },
+    "loc": {
+        "lat": 11.11,
+        "lng": 22.22,
+        "name": "Tel Aviv"
+    },
+    "social": {
+        "linkedin": ""
+    },
+    "rating": null
+}

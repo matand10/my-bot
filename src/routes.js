@@ -1,7 +1,8 @@
-import { HomePage } from './pages/home-page'
+import { Dashboard } from "./pages/dashboard";
+
 export const routes = [
     {
         path: '/',
-        component: <HomePage />,
+        component: <Dashboard />,
     }
 ]

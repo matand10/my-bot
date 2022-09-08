@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "User 1",
+        "email": "",
+        "imgUrl": "/img/img1.jpg",
+        "isAdmin": false,
+        "username": "user1",
+        "password": "secret",
+        "bots": [
+            {
+                "_id": "j101",
+                "ownerId": "u101",
+                "botName": "Rock star full stack",
+                "role": "",
+                "imgUrl": "https://robohash.org/1",
+                "gender": "",
+                "experience": {
+                    "title": "experience",
+                    "description": ""
+                },
+                "education": {
+                    "title": "education",
+                    "description": ""
+                },
+                "other": {
+                    "title": "other",
+                    "description": ""
+                },
+                "loc": {
+                    "lat": 11.11,
+                    "lng": 22.22,
+                    "name": "Tel Aviv"
+                },
+                "social": {
+                    "linkedin": ""
+                },
+                "rating": null
+            }
+        ]
+    },
+    {
+        "_id": "u102",
+        "fullname": "User 2",
+        "email": "",
+        "imgUrl": "/img/img1.jpg",
+        "isAdmin": false,
+        "username": "user1",
+        "password": "secret",
+        "bots": [
+            {
+                "_id": "j101",
+                "ownerId": "u101",
+                "botName": "Rock star full stack",
+                "role": "",
+                "imgUrl": "https://robohash.org/2",
+                "gender": "",
+                "experience": {
+                    "title": "experience",
+                    "description": ""
+                },
+                "education": {
+                    "title": "education",
+                    "description": ""
+                },
+                "other": {
+                    "title": "other",
+                    "description": ""
+                },
+                "loc": {
+                    "lat": 11.11,
+                    "lng": 22.22,
+                    "name": "Tel Aviv"
+                },
+                "social": {
+                    "linkedin": ""
+                },
+                "rating": null
+            }
+        ]
+    }
+]
