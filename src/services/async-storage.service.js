@@ -1,4 +1,6 @@
 import { utilService } from './util.service'
+import gUsers from '../json/users.json'
+
 export const storageService = {
     query,
     get,
@@ -8,8 +10,7 @@ export const storageService = {
 }
 
 function query(entityType = 'bot') {
-    var entities = JSON.parse(localStorage.getItem(entityType)) || []
-
+    var entities = JSON.parse(localStorage.getItem(entityType)) || gUsers
     return Promise.resolve(entities)
 }
 

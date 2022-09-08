@@ -1,11 +1,13 @@
+import { BotPreview } from "./bot-preview";
 
 
 export const BotList = (props) => {
-    const { } = props
+    const { bots } = props
 
+    console.log(bots);
     return (
-        <section>
-            <h1>Hello from bot list</h1>
+        <section className="botlist-container">
+            {bots.map(bot => <BotPreview key={bot._id} bot={bot} />)}
         </section>
     )
 }

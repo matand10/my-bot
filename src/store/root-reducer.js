@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { botReducer } from './bot/bot.reducer';
+import { configureStore } from '@reduxjs/toolkit'
+import { botReducer } from './bot/bot.reducer'
+import { userReducer } from './user/user.reducer'
 
 export const store = configureStore({
   reducer: {
-    botModule: botReducer
+    userModule: userReducer,
+    botModule: botReducer,
   },
 });
