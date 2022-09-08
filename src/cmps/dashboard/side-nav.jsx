@@ -2,7 +2,7 @@ import { BotList } from "../bot-list"
 
 
 export const SideNav = (props) => {
-    const { } = props
+    const { user } = props
 
     return (
         <section className="side-nav-container">
@@ -11,9 +11,9 @@ export const SideNav = (props) => {
                 <button>Create bot</button>
             </div>
             <div>
-                <h1>Hello user</h1>
+                <h1>{user.fullname}</h1>
                 <input type="text" placeholder="Search..." />
-                <BotList />
+                <BotList bots={user.bots} />
             </div>
         </section>
     )

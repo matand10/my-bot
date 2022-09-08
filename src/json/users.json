@@ -45,7 +45,7 @@
         "email": "",
         "imgUrl": "/img/img1.jpg",
         "isAdmin": false,
-        "username": "user1",
+        "username": "user2",
         "password": "secret",
         "bots": [
             {
