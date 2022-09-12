@@ -40,6 +40,12 @@ input:focus {
     outline: none;
 }
 
+textarea {
+    resize: none;
+    height: 30%;
+    width: 50%;
+}
+
 textarea:active,
 textarea:focus {
     outline: none;

@@ -3,7 +3,7 @@ import { BotList } from "../bot-list"
 
 export const SideNav = (props) => {
     const { user } = props
-
+    if (!user) return <div>No User Found</div>
     return (
         <section className="side-nav-container">
             <div className="">
@@ -11,7 +11,7 @@ export const SideNav = (props) => {
                 <button>Create bot</button>
             </div>
             <div>
-                <h1>{user.fullname}</h1>
+                <h1>{user.fullname || 'Bot FullName'}</h1>
                 <input type="text" placeholder="Search..." />
                 <BotList bots={user.bots} />
             </div>
