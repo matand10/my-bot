@@ -16,14 +16,21 @@ export const CreateBot = (props) => {
         other: ''
     })
 
-    const onSubmit = () => {
+    const onSubmit = (ev) => {
         console.log('submiting')
     }
+
+    const handleChange = ({ target }) => {
+        const val = target.value
+        const field = target.name
+        setBot({ ...bot, [field]: val })
+    }
+    console.log(bot)
     return (
         <div className="fake-section flex">
             <section className="create-bot align-center pad-10px">
                 <form onSubmit={onSubmit} className="flex column pad-10px">
-                    <CreateBotInputs />
+                    <CreateBotInputs handleChange={handleChange} />
                     <CreateBotRadios />
                     <CreateBotTextareas />
                 </form>
