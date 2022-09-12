@@ -1,6 +1,6 @@
 export const CreateBotRadios = () => {
     return (
-        <div className="textarea-wrapper pad-10px">
+        <div className="radio-wrapper">
             <fieldset>
                 <legend>Gender</legend>
                 <div className="flex pad-10px">

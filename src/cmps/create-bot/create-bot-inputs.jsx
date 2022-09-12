@@ -3,9 +3,9 @@
 export const CreateBotInputs = () => {
 
     return (
-        <div className="input-wrapper flex align-center ">
+        <div className="input-wrapper flex justify-center ">
 
-            <div className="flex column pad-10px">
+            <div className="wid-100 flex column pad-10px">
 
                 <div className="pad-10px">
                     <label htmlFor="bot-name">Bot Name:</label>
@@ -19,7 +19,7 @@ export const CreateBotInputs = () => {
 
             </div>
 
-            <div className="flex column pad-10px">
+            <div className="wid-100 flex column pad-10px">
                 <div className="pad-10px">
                     <label htmlFor="user-name">User Name:</label>
                     <input type="text" placeholder="User Name" id="user-name" />
