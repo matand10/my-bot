@@ -2,9 +2,9 @@ import { useState } from "react"
 import { CreateBotInputs } from "../cmps/create-bot/create-bot-inputs"
 import { CreateBotRadios } from "../cmps/create-bot/create-bot-radios"
 import { CreateBotTextareas } from "../cmps/create-bot/create-bot-textareas"
-
 export const CreateBot = (props) => {
     const { } = props
+    let gTimeOut
     const [bot, setBot] = useState({
         botName: '',
         role: '',
@@ -17,20 +17,20 @@ export const CreateBot = (props) => {
     })
 
     const onSubmit = (ev) => {
+        ev.preventDefaulte()
         console.log('submiting')
+        //Will Save The Bot
     }
 
     const handleChange = (ev) => {
-        let timeOut
         const { target } = ev
         const val = target.value
         const field = target.name
-        clearTimeout(timeOut)
-         timeOut = setTimeout(() => {
+        clearTimeout(gTimeOut)
+        gTimeOut = setTimeout(() => {
             setBot({ ...bot, [field]: val })
             console.log('Hola');
-        }, 3000)
-        
+        }, 1000)
     }
     console.log(bot);
     return (
@@ -40,6 +40,7 @@ export const CreateBot = (props) => {
                     <CreateBotInputs handleChange={handleChange} />
                     <CreateBotRadios handleChange={handleChange} />
                     <CreateBotTextareas handleChange={handleChange} />
+                    <button>Save</button>
                 </form>
             </section>
 
