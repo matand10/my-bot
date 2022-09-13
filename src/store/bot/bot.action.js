@@ -34,3 +34,13 @@ export function saveBot(bot) {
         }
     }
 }
+export function loadBot(botId) {
+    return async dispatch => {
+        try {
+            const bot = await botService.getById(botId)
+            dispatch({ type: 'SET_BOT', bot })
+        } catch (err) {
+            console.log(err)
+        }
+    }
+}

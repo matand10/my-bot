@@ -9,6 +9,8 @@ export function botReducer(state = initialState, action) {
     switch (action.type) {
         case 'SET_BOTS':
             return { ...state, bots: action.bots }
+        case 'SET_BOT':
+            return {...state, bot: action.bot}
         case 'REMOVE_BOT':
             bots = state.bots.filter(bot => bot._id !== action.botId)
             return { ...state, bots }

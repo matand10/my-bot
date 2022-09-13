@@ -4,7 +4,7 @@ import { userService } from './user.service.js'
 
 const STORAGE_KEY = 'bot'
 
-export const carService = {
+export const botService = {
     query,
     getById,
     save,
