@@ -1,4 +1,4 @@
-{
+[{
     "_id": "j101",
     "ownerId": "u101",
     "botName": "Rock star full stack",
@@ -26,4 +26,4 @@
         "linkedin": ""
     },
     "rating": null
-}
+}]

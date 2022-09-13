@@ -1,5 +1,6 @@
 import { utilService } from './util.service'
 import gUsers from '../json/users.json'
+import gBots from '../json/bot.json'
 
 export const storageService = {
     query,
@@ -10,7 +11,7 @@ export const storageService = {
 }
 
 function query(entityType = 'bot') {
-    var entities = JSON.parse(localStorage.getItem(entityType)) || gUsers
+    var entities = JSON.parse(localStorage.getItem(entityType)) || gBots
     return Promise.resolve(entities)
 }
 
@@ -43,6 +44,7 @@ function put(entityType, updatedEntity) {
 
 function post(entityType, newEntity) {
     newEntity._id = utilService.makeId()
+    console.log('newEntity', newEntity)
     return query(entityType)
         .then(entities => {
             entities.push(newEntity)
