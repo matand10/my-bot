@@ -17,7 +17,7 @@ export const CreateBot = (props) => {
         onLoadBot()
     }, [])
 
-    const onLoadBot = () => {
+    const onLoadBot = async () => {
         const { botId } = params
         console.log('bot', botId);
         if (botId) {
