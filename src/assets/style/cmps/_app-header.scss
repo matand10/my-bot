@@ -2,4 +2,16 @@
     justify-content: space-between;
     border-bottom: solid rgb(235, 229, 229) 1px;
     padding: 5px;
+
+.logo{
+    margin-inline-start: 33px;
+    align-self: center;
+}
+    .nav{
+        margin-inline-end: 33px;
+        align-items: center;
+        justify-content: space-between;
+        width: 11rem;
+        height: 3rem;
+    }
 }

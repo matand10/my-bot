@@ -12,8 +12,10 @@ export const botService = {
 }
 
 
-function query() {
-    return storageService.query(STORAGE_KEY)
+async function query() {
+    const bots = await storageService.query(STORAGE_KEY)
+    // console.log('service', bots)
+    return bots
 }
 
 function getById(botId) {
